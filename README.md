@@ -16,9 +16,9 @@ v 1 = 2009
 Installation
 ============
 1. Bifurquez (fork) ce dépôt
-2. Utilisez le fichier espace_multimedia.sql pour créer les tables de la base de données
-3. Modifiez le fichier /include/fonctions/connexion.func.php avec vos identifiants de connexion à vos serveur + base de données
-4. Modifiez le fichier /include/fonctions/parametrages.inc.php pour indiquer le nombre de postes informatiques dont vous disposez ainsi que le nombre de visites que vous souhaitez voir affiché
+2. Utilisez le fichier `espace_multimedia.sql` pour créer les tables de la base de données
+3. Modifiez le fichier `/include/fonctions/connexion.func.php` avec vos identifiants de connexion à vos serveur + base de données
+4. Modifiez le fichier `/include/fonctions/parametrages.inc.php` pour indiquer le nombre de postes informatiques dont vous disposez ainsi que le nombre de visites que vous souhaitez voir affiché
 5. Clonez l'ensemble des fichiers à la racine de votre serveur web
 6. Créez votre identifiant ainsi que votre mot de passe crypté : http://www.md5.fr/
 7. Lancez votre navigateur
