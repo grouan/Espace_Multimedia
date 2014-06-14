@@ -1,0 +1,243 @@
+/*	--------------------------------------------------------------------------------------------------------------
+		Auteur 	: Guillaume ROUAN						Titre	: multimedia.css
+		Contact	: @grouan							Date 	: 06/09
+		Pour		: Espace multimédia						Version: 1
+	--------------------------------------------------------------------------------------------------------------
+		Licence : Attribution 4.0 International (CC BY 4.0) http://creativecommons.org/licenses/by/4.0/
+	--------------------------------------------------------------------------------------------------------------	*/
+
+/* --- Généraux --- */
+BODY {
+	margin: 0px;
+	padding: 0px;
+	font-family: Century Gothic, Arial;
+	background: transparent url(../img/bg.png) top left repeat;
+}
+A { text-decoration: none; }
+#conteneur {
+	width: 100%;
+	height: 100%;
+}
+#logo {
+	width: 100%;
+	height: 60px;
+	background: #09C url(../img/fond_logo.png) center left repeat-x;
+	color: #09C;
+	font-size: 40px;
+}
+#logo_gauche { background: transparent url(../img/fond_logo_gauche.png) top left no-repeat; padding: 5px 20px; }
+#menu {
+	margin-top: -25px;
+	text-align: right;
+	width: 100%;
+}
+#menu a, #menu a:active, #menu a:visited {
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #000;
+	margin: 0px;
+	padding: 2px 10px;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #DDD;
+}
+#menu a:hover {
+	border-left: 1px solid #09C;
+	border-right: 1px solid #09C;
+	border-bottom: 1px solid #09C;
+	background-color: #09C;
+	margin: 0px;
+	padding: 2px 10px;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #FFF;
+}
+#colonne {
+	
+}
+#recherche {
+	width: 100%;
+	height: 30px;
+	background: transparent url(../img/bg.png) top left repeat;
+	padding: 3px 0px 1px 0px;
+}
+TABLE.feuille {
+	background-color: #FFF;
+}
+TD.colonne { 
+	width:300px;
+	background: transparent url(../img/fond_colonne2.png) top left repeat-y;
+}
+TD.postes { 
+	height: 100%;
+	padding: 20px;
+	vertical-align: top;
+	background: transparent;
+	border-bottom: 1px solid transparent;
+}
+#pied {
+	width: 100%;
+	background-color: transparent;
+	color: #DDD;
+	font-size: 10px;
+	text-align: center;
+	padding: 5px 0px;
+}
+/* --- Formulaire de recherche */
+FORM.formulaireRecherche { text-align: right; }
+SELECT.rech_select { font-size:11px; border: 1px solid #CCC; color: #999; background-color: #EAEAEA; padding: 1px 3px; }
+SELECT.rech_selectHover { font-size:11px; border: 1px solid #090; color: #090; background-color: #CFC; padding: 1px 3px; }
+OPTION.rech_option {  }
+INPUT.rech_text { font-size:11px; border: 1px solid #CCC; color: #999; background-color: #EAEAEA; padding: 2px 3px; }
+INPUT.rech_textHover { font-size:11px; border: 1px solid #090; color: #090; background-color: #CFC; padding: 2px 3px; }
+INPUT.rech_submit:hover { font-size:10px; border: 1px solid #6C0; color: #FFF; background-color: #060; padding: 1px 3px; text-transform: uppercase; }
+INPUT.rech_submit { font-size:10px; border: 1px solid #090; color: #FFF; background-color: #090; padding: 1px 3px; text-transform: uppercase; }
+/* ---  --- */
+INPUT.bouton_rafraichir { font-size:10px; border: 1px solid #C36; color: #C9F; background-color: #C36; padding: 1px 3px; text-transform: uppercase; }
+INPUT.bouton_rafraichir:hover { font-size:10px; border: 1px solid #900; color: #FCC; background-color: #900; padding: 1px 3px; text-transform: uppercase; }
+INPUT.bouton_deconnexion { font-size:10px; border: 1px solid #090; color: #CFC; background-color: #090; padding: 1px 3px; text-transform: uppercase; }
+INPUT.bouton_deconnexion:hover { font-size:10px; border: 1px solid #900; color: #FCC; background-color: #900; padding: 1px 3px; text-transform: uppercase; }
+#resultatliste, #resultatliste:active, #resultatliste:visited {
+	text-decoration: none;
+	color: #090;
+	border-top: 1px dotted #DDD;
+	border-bottom: 1px dotted #DDD;
+	margin: 2px 0px;
+}
+#resultatliste:hover {
+	text-decoration: none;
+	color: #900;
+	border-top: 1px dotted #DDD;
+	border-bottom: 1px dotted #DDD;
+	margin: 2px 0px;
+	background-color: #CFC;
+}
+
+/* --- Colonne --- */
+#date_jour, #date_jourchiffre, #date_mois, #date_annee {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #09C;
+}
+#date_jour {  }
+#date_jourchiffre { font-size: 60px; color: #06C; }
+#date_mois {  }
+#date_annee {  }
+
+/* --- Formulaire de connexion --- */
+#identification {
+	margin: 40px;
+	border: 1px dashed #BBB;
+	background-color: #EAEAEA;
+	padding: 20px;
+}
+FORM.formulaireIdent {  }
+#ident { margin-bottom: 20px; }
+INPUT.text { padding: 3px 5px; border: 1px solid #CCC; color: #CCC; }
+INPUT.textHover { padding: 3px 5px; border: 1px solid #06C; background-color: #6CF; color: #06C; }
+INPUT.submit {
+	border: 1px solid #CCC;
+	color: #CCC;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 3px 5px;
+}
+INPUT.submit:hover {
+	border: 1px solid #06C;
+	color: #06C;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 3px 5px;
+	background-color: #6CF;
+}
+
+/* --- Fiche --- */
+#identite_nomprenom {
+	font-size: 40px;
+}
+#fiche_identite {
+	padding-bottom: 20px;
+	border-bottom: 1px dotted #CCC;
+	margin-bottom: 20px;
+}
+#fiche_session {
+	padding-bottom: 20px;
+	border-bottom: 1px dotted #CCC;
+	margin-bottom: 20px;
+}
+a INPUT.bouton_fin_session {	font-size:10px; border: 1px solid #900; color: #900; background-color: #FCF; padding: 1px 3px; text-transform: uppercase; text-decoration: none; margin-top: 5px; }
+a INPUT.bouton_fin_session:hover { font-size:10px; border: 1px solid #900; color: #FCF; background-color: #900; padding: 1px 3px; text-transform: uppercase; text-decoration: none; margin-top: 5px; }
+TD.ligne_modif {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0px 10px 2px 0px;
+	text-align: right;
+}
+/* Visites */
+TD.listeVisites_titre {
+	font-weight:bold;
+	font-size:10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+TD.listeVisites_texte {
+	font-size:11px;
+	text-align: center;
+	padding: 2px 0px;
+}
+TD.listeVisites_texte a, TD.listeVisites_texte a:active, TD.listeVisites_texte a:visited {
+	font-weight: bold;
+	color: #333;
+	text-transform: uppercase;
+}
+TD.listeVisites_texte a:hover {
+	color: #FFF;
+	background-color: #903;
+}
+INPUT.fiche_modif_submit:hover { font-size:10px; border: 1px solid #F60; color: #FFC; background-color: #F60; padding: 1px 3px; text-transform: uppercase; }
+INPUT.fiche_modif_submit { font-size:10px; border: 1px solid #F90; color: #FFC; background-color: #F90; padding: 1px 3px; text-transform: uppercase; }
+INPUT.fiche_ajout_submit:hover { font-size:10px; border: 1px solid #390; color: #CFC; background-color: #390; padding: 1px 3px; text-transform: uppercase; }
+INPUT.fiche_ajout_submit { font-size:10px; border: 1px solid #6C0; color: #CFC; background-color: #6C0; padding: 1px 3px; text-transform: uppercase; }
+/* --- Tableau de bord --- */
+TABLE.bord {}
+TD.bord_gauche, TD.bord_droit {
+	font-size: 11px;
+	padding-top: 5px;
+	color: #333;
+}
+TD.bord_gauche a, TD.bord_droit a, TD.bord_gauche a:active, TD.bord_droit a:active, TD.bord_gauche a:visited, TD.bord_droit a:visited {
+	text-decoration: none;
+	color: #333;
+}
+TD.bord_gauche:hover a, TD.bord_droit:hover a {
+	color: #FFF;
+}
+TD.bord_droit {
+	
+}
+TD.bord_droit_vide {
+	
+}
+
+/* --- ADMINISTRATION --- */
+#admin_hautdepage {
+	text-align:right;
+	color:#BBB;
+	text-decoration:none;
+	width:auto;
+	position:relative;
+	float:right;
+	margin:-10px -10px 0px 0px;
+	padding-left:4px;
+	background-color:#FFF;
+}
+#admin_hautdepage:hover {
+	color:#900;
+}
+#admin_titre {
+	font-weight: bold;
+	font-size: 20px;
+}
+
